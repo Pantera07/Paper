@@ -1563,9 +1563,9 @@
 +        }
 +
 +        if (type == org.bukkit.WeatherType.DOWNFALL) {
-+            this.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.STOP_RAINING, 0));
-+        } else {
 +            this.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.START_RAINING, 0));
++        } else {
++            this.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.STOP_RAINING, 0));
 +        }
 +    }
 +
